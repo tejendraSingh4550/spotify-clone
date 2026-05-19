@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+      <div class="logo">Spotify</div>
+
+      <ul class="menu">
+        <li>🏠 Home</li>
+        <li>🔍 Search</li>
+        <li>🎵 Library</li>
+        <li>❤️ Liked Songs</li>
+        <li>🔥 Trending</li>
+      </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+      <div class="topbar">
+
+        <input type="text" placeholder="Search music..." class="search">
+
+        <div class="profile">Tejendra</div>
+
+      </div>
+
+      <!-- Banner -->
+
+      <div class="banner">
+
+        <h1>Feel The Music</h1>
+
+        <p>Listen to trending songs with modern UI.</p>
+
+        <button>Explore Now</button>
+
+      </div>
+
+      <!-- Cards -->
+
+      <h2 class="section-title">Popular Playlists</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000">
+          <h3>Top Hits</h3>
+          <p>Best trending songs.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1000">
+          <h3>Chill Beats</h3>
+          <p>Relax and enjoy.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1000">
+          <h3>Workout Mix</h3>
+          <p>Boost your energy.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1499364615650-ec38552f4f34?q=80&w=1000">
+          <h3>Party Night</h3>
+          <p>Party all night.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Player -->
+
+  <div class="player">
+
+    <div class="song-info">
+
+      <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000">
+
+      <div>
+        <h4>Blinding Lights</h4>
+        <p>The Weeknd</p>
+      </div>
+
+    </div>
+
+    <div class="controls">
+
+      <button onclick="previousSong()">⏮</button>
+      <button onclick="playSong()">▶</button>
+      <button onclick="nextSong()">⏭</button>
+
+    </div>
+
+    <input type="range">
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
